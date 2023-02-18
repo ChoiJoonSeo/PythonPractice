@@ -104,13 +104,13 @@ x *= 3 # 안녕!안녕!안녕!안녕!안녕!안녕!안녕!안녕!안녕!
 # 입력 출력
 # 출력은 print
 # 입력은 input
-y = int(input()) # 숫자로 입력을 해도 무조건 문자열로 저장한다. input 자체를 int로 많이 감싸기도 한다.
+# y = int(input()) # 숫자로 입력을 해도 무조건 문자열로 저장한다. input 자체를 int로 많이 감싸기도 한다.
 # '24' 를 int() 에 전달하면, 숫자 24가 된다.
 yy = 2
-yyy = yy + y # y는 문자열이라서 숫자랑 못 더한다.
-print(yyy)
-yyyy = float(input()) # float은 정수를 입력해도 문제 없음. (.0이 추가됨)
-print(yyyy)
+# yyy = yy + y # y는 문자열이라서 숫자랑 못 더한다.
+# print(yyy)
+# yyyy = float(input()) # float은 정수를 입력해도 문제 없음. (.0이 추가됨)
+# print(yyyy)
 
 yyyyyy = '내 나이:'
 yyyyy = 24
@@ -124,3 +124,21 @@ dog = '''|\\_/|
 print(dog)
 
 print('hi')
+
+
+#2-4
+# 함수 -> 어떤 값을 돌려줄 수 있음.
+# a = input() # ....Enter -> Enter 포함을 안 시킴
+# b = sys.stdin.readline().rstrip() # input이랑 똑같음 abc <- Enter까지 포함
+c = 'x'.islower() # 숫자로 된 문자열이라는 걸 알려줌
+
+
+d = '1@2@3@4@5'.split("@")
+e = '1 2 3 4 5'.split() # 기본이 공백
+print(d)
+print(e)
+
+# format 대신 f''
+aa = '{} {}'.format(10, 20)
+aaa = f'나이는 {24}살 입니다'
+print(aaa)
